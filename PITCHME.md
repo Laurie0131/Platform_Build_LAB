@@ -203,12 +203,12 @@ Note:
 ---
 @title[Download Lab_Material_FW -getting the Source ]
 ### <p align="right"><span class="gold" >Download Lab Material</span><br></span></p>
-<span style="font-size:0.9em" >Download the Lab_Material_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/Laurie0131/Lab_Material_FW/archive/master.zip">github.com Lab_Matrial_FW.zip</a></span><br>
+<span style="font-size:0.9em" >Download the Lab_Material_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/tianocore-training/Lab_Material_FW/archive/master.zip">github.com Lab_Matrial_FW.zip</a></span><br>
 <br>
 <span style="font-size:0.9em" >OR<br>Use `git clone` to download the Lab_Material_FW<span>
 ```
 bash$ cd $HOME
-bash$ git clone https://github.com/Laurie0131/Lab_Material_FW.git
+bash$ git clone https://github.com/tianocore-training/Lab_Material_FW.git
 ```
 <span style="font-size:0.9em" >Directory Lab_Material_FW will be created</span>
 ```
@@ -499,7 +499,7 @@ bash$ screen /dev/ttyUSBn 115200
 @title[End of Section]
 <br><br><br><br><br>
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End of Lab </span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a>&nbsp;&nbsp;  or&nbsp;&nbsp;  <a href='https://gitpitch.com/Laurie0131/Platform_Build_LAB/master#/24'>@fa[chevron-right gp-bullet-cyan]</a>  &nbsp;&nbsp;to continue  </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=''>Return to the begining</a>&nbsp;&nbsp;  or&nbsp;&nbsp;  <a href='https://gitpitch.com/tianocore-training/Platform_Build_LAB/master#/24'>@fa[chevron-right gp-bullet-cyan]</a>  &nbsp;&nbsp;to continue  </span>
  
 
 ---?image=assets/images/binary-strings-black2.jpg 
@@ -548,12 +548,12 @@ Note:
 ---
 @title[Download MinnowBoard MAX Lab Source]
 ### <p align="right"><span class="gold" >Download MAX Lab Source</span></p>
-<span style="font-size:0.9em" >Download the PlatformBuildLab_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/Laurie0131/PlatformBuildLab_FW/archive/master.zip">github.com PlatformBuildLab_FW.zip</a></span><br>
+<span style="font-size:0.9em" >Download the PlatformBuildLab_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/tianocore-training/PlatformBuildLab_FW/archive/master.zip">github.com PlatformBuildLab_FW.zip</a></span><br>
 <br>
 <span style="font-size:0.9em" >OR<br>Use `git clone` to download the PlatformBuildLab_FW<span>
 ```
 bash$ cd $HOME
-bash$ git clone https://github.com/Laurie0131/PlatformBuildLab_FW.git
+bash$ git clone https://github.com/tianocore-training/PlatformBuildLab_FW.git
 ```
 <span style="font-size:0.9em" >Directory PlatformBuildLab_FW will be created</span>
 ```
@@ -829,7 +829,6 @@ FS0:\> MinnowBoard.MAX.FirmwareUpdateX64.efi MNW2MAX1_X64_D_0099_01_GCC.bin
 ```
 <br>
 <span style="font-size:0.75em" >Wait for the new firmware update to finish</span>
-<br>
 <br>
 <br>
 <br>
