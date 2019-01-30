@@ -592,8 +592,8 @@ Note:
 &nbsp;&nbsp; bash$ sudo apt-get install screen &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ cd $Home &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ gedit ~.screenrc &nbsp;&nbsp;
-</span></font>
-Inside the editor, type "`shell /bin/bash`" then save
+</span></font><br>
+Inside the editor, type<br> @size[.8em]("`shell /bin/bash`") &nbsp;&nbsp;then save
 </span></p>
 <br>
 @snapend
