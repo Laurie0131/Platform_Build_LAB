@@ -1259,13 +1259,13 @@ Note:
 <br>
 <br>
 <span style="font-size:0.9em" >@size[1.25em](<font color="yellow"> &#10106;</font>)&nbsp;&nbsp;Flash the binary image</span><br>
-1.  <span style="font-size:0.85em" >&nbsp;&nbsp;Access Max Binary image file from build folder</span><br>
-  - <span style="font-size:0.75em" >`~src/Max/Vlv2TbltDevicePkg/Stitch`</span><br>
-  - <span style="font-size:0.75em" >DEBUG 	MNW2MAX1.X64.D_0099_01_GCC.bin</span><br>
-  - <span style="font-size:0.75em" >RELEASE	MNW2MAX1.X64.R_0099_01_GCC.bin</span><br>
-2. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy BIN files to a USB Thumb drive</span><br>
-3. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy </span><span style="font-size:0.65em" >`MinnowBoard.MAX.FirmwareUpdateX64.efi`</span><span style="font-size:0.85em" > to a USB thumb &nbsp;&nbsp;drive from `~/FW/PlatformBuildLab`</span><br>
-4. <span style="font-size:0.85em" >&nbsp;&nbsp;Boot to UEFI Shell on Max and type "`FS0:`"</span>
+<span style="font-size:0.85em" >1.&nbsp;&nbsp;Access Max Binary image file from build folder</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;  - <span style="font-size:0.75em" >`~src/Max/Vlv2TbltDevicePkg/Stitch`</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;  - <span style="font-size:0.75em" >DEBUG 	MNW2MAX1.X64.D_0099_01_GCC.bin</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;  - <span style="font-size:0.75em" >RELEASE	MNW2MAX1.X64.R_0099_01_GCC.bin</span><br>
+<span style="font-size:0.85em" >2. &nbsp;&nbsp;Copy BIN files to a USB Thumb drive</span><br>
+<span style="font-size:0.85em" >3. &nbsp;&nbsp;Copy </span><span style="font-size:0.65em" >`MinnowBoard.MAX.FirmwareUpdateX64.efi`</span><span style="font-size:0.85em" > to a USB thumb<br>&nbsp;&nbsp; &nbsp;&nbsp;drive from `~/FW/PlatformBuildLab`</span><br>
+<span style="font-size:0.85em" >4. &nbsp;&nbsp;Boot to UEFI Shell on Max and type "`FS0:`"</span>
 @snapend 
  
 Note:
