@@ -609,6 +609,15 @@ Note:
  <br>
 @snapend
 
+
+
+@snap[south-east span-45 ]
+<p style="line-height:70%" align="left"><span style="font-size:0.60em;  " >
+There may be other serial terminal applications that support Ubuntu. <br>
+The application "screen" is used for the MinnowBoard MAX labs
+</span></p>
+@snapend
+
 Note:
 - Terminal prompt (Cnt-Alt-T)<br>
 `bash$ sudo apt-get install screen`<br>
