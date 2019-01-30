@@ -374,9 +374,9 @@ bash$ . edksetup.sh
 @title[Build Ovmf Edk2 -update target.txt]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
 
-@snap[north-east span-50 ]
+@snap[north-east span-60 ]
 <br>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Update Target.txt</font></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Update Target.txt & Build</font></span></p>
 @snapend
 
 
