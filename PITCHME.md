@@ -1035,6 +1035,7 @@ There is also this capability that is part of the .dsc but many developers have 
 <br>
 <br>
 <br>
+<br>
 @size[1.125em](<font color="yellow"> &#10104;</font>)
 @snapend
 
@@ -1258,8 +1259,6 @@ Note:
 <br>
 <br>
 <span style="font-size:0.9em" >@size[1.25em](<font color="yellow"> &#10106;</font>)&nbsp;&nbsp;Flash the binary image</span>
-@snapend
-<br>
 1.  <span style="font-size:0.85em" >&nbsp;&nbsp;Access Max Binary image file from build folder</span>
   - <span style="font-size:0.75em" >`~src/Max/Vlv2TbltDevicePkg/Stitch`</span>
   - <span style="font-size:0.75em" >DEBUG 	MNW2MAX1.X64.D_0099_01_GCC.bin</span>
@@ -1267,6 +1266,7 @@ Note:
 2. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy BIN files to a USB Thumb drive</span>
 3. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy </span><span style="font-size:0.65em" >`MinnowBoard.MAX.FirmwareUpdateX64.efi`</span><span style="font-size:0.85em" > to a USB thumb &nbsp;&nbsp;drive from `~/FW/PlatformBuildLab`</span>
 4. <span style="font-size:0.85em" >&nbsp;&nbsp;Boot to UEFI Shell on Max and type "`FS0:`"</span>
+@snapend 
  
 Note:
 1.  Access Max Binary image file from build folder
@@ -1316,12 +1316,11 @@ Reset and boot new firmware
 <br>
 <br>
 <span style="font-size:0.9em" >@size[1.25em](<font color="yellow"> &#10107;</font>)&nbsp;&nbsp;Reboot and Verify</span>
-@snapend
-<br>
+
 - <span style="font-size:0.8em" >Verify that the Firmware was updated by checking the Date</span>
 - <span style="font-size:0.8em" >At the shell prompt type “exit”</span>
 - <span style="font-size:0.8em" >The EDK II front page will show the BIOS ID with Date/time stamp</span>
-
+@snapend
  
 Note:
 
