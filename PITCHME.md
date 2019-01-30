@@ -64,8 +64,7 @@ Note:
 ---
 @title[Ubuntu 16.04 Pre-requisites]
 ### <p align="right"><span class="gold" >Pre-requisites Ubuntu 16.04 </span></p>
-Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610 
-"> tianocore wiki Ubuntu_1610</a> 
+Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610 "> tianocore wiki Ubuntu_1610</a> 
 - Example Ubuntu 16.04<br>
 - The following need to be accessible for building Edk II Platforms, From the terminal prompt (Cnt-Alt-T) :
 ```shell
@@ -88,10 +87,27 @@ bash$ sudo apt-get install qemu
 
 Note:
 
----?image=/assets/images/slides/Slide4.JPG
+---?image=/assets/images/slidesx/Slide5.JPG
 @title[Create QEMU run script]
 ### <p align="right"><span class="gold" >Create Qemu Run Script</span></p>
-
+<span style="font-size:0.9em" >1. Create a run-ovmf directory under the home directory</span>
+```
+bash$ cd ~
+bash$ mkdir ~run-ovmf
+bash$ cd run-ovmf
+```
+<span style="font-size:0.9em" >2. Create a directory to use as a hard disk image </span>
+```
+bash$ mkdir hda-contents
+```
+<span style="font-size:0.9em" >3. Create a Linux shell script to run the QEMU from the run-ovmf directory </span>
+```
+bash$ gedit RunQemu.sh
+```
+<br>
+<br>
+<br>
+<span style="font-size:0.9em" >Save and Exit</span>
 
 Note:
 Create a run-ovmf directory under the home directory
@@ -131,7 +147,7 @@ bash$ gedit RunQemu.sh
 // In gedit:
 qemu-system-x86_64 -pflash bios.bin -hda fat:rw:hda-contents -net none     -debugcon file:debug.log -global isa-debugcon.iobase=0x402 
 ```
-4.<span style="font-size:0.9em" >Save and Exit</span>
+<span style="font-size:0.9em" >Save and Exit</span>
 
 Note:
 
@@ -221,18 +237,46 @@ bash$ git clone https://github.com/tianocore-training/Lab_Material_FW.git
 ```
 
 
----?image=/assets/images/slides/Slide10.JPG
+---?image=/assets/images/slidesx/Slide10.JPG
 @title[Build Ovmf Edk2 -getting the Source ]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
+
+@snap[north-east span-50 ]
+<br>
 <p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Extract the Source</font></span></p>
+@snapend
+
+@snap[north-west span-100 ]
+<br>
+<br>
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >1. Extract the Downloaded `Lab_Material_FW-master.zip` to `Home` &lpar; this will create a directory `FW`&rpar; </span></p>
+<br>
+@snapend
+
 
 Note:
 Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory FW )
 
----?image=/assets/images/slides/Slide12.JPG
+---?image=/assets/images/slidesx/Slide11.JPG
 @title[Build Ovmf Edk2 -getting the Source 02]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Getting the Source</font></span></p>
+
+@snap[north-east span-50 ]
+<br>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Copy the Source</font></span></p>
+@snapend
+
+@snap[north-west span-100 ]
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+2. Open a terminal prompt (Alt-Cnt-T)<br>
+3. Create a working space directory "src" under the home directory<br>&nbsp;&nbsp;<font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+&nbsp;&nbsp;bash$ mkdir ~src&nbsp;&nbsp;</span></font><br>
+4. From the downloaded "`Lab_Material_FW`" folder, <b>copy</b>&nbsp;and &nbsp;<b>paste</b> folder &nbsp;"`.../FW/edk2`"&nbsp; to &nbsp;`~src`
+</span></p>
+<br>
+@snapend
 
 
 Note:
@@ -245,11 +289,25 @@ bash$ mkdir ~src
 
 - From the FW folder, copy and paste folder “~FW/edk2” to ~src
 
----?image=/assets/images/slides/Slide14.JPG
+---?image=/assets/images/slidesx/Slide12.JPG
 @title[Build Ovmf Edk2 -getting the Source 03]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Getting the Source</font></span></p>
 
+@snap[north-east span-50 ]
+<br>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Getting BaseTools</font></span></p>
+@snapend
+
+@snap[north-west span-100 ]
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+ 5. Rename or `mv` the direcotry "`~src/edk2/BaseTools`"<br><font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+&nbsp;&nbsp;bash$ cd ~src/edk2&nbsp;&nbsp;<br>
+&nbsp;&nbsp;bash$ mv BaseTools BaseToolsX&nbsp;&nbsp;</span></font><br>
+ 6. Extract the file `~FW/edk2Linux/BaseTools.tar.gz`  to  `~src/edk2`
+</span></p>
+<br>
+@snapend
 
 
 Note:
@@ -259,10 +317,32 @@ Note:
    bash$ mv BaseTools BaseToolsX
 - Extract the file ~FW/edk2Linux/BaseTools.tar.gz  to  ~src/edk2
 
----?image=/assets/images/slides/Slide16.JPG
+---?image=/assets/images/slidesx/Slide13.JPG
 @title[Build Ovmf Edk2 -getting the Source 04]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Getting the Source</font></span></p>
+
+@snap[north-east span-50 ]
+<br>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Getting the Source</font></span></p>
+@snapend
+
+@snap[north-west span-100 ]
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+ 7. Run Make from the Terminal prompt <br><font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+&nbsp;&nbsp;bash$ cd ~src/edk2&nbsp;&nbsp;<br>
+&nbsp;&nbsp;bash$ make -C BaseTools&nbsp;&nbsp;</span></font><br>
+<br>
+<br>
+<br>
+<br>
+ 8. Run edksetup (note This will need to be done for every new Terminal prompt)<br>
+<font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+&nbsp;&nbsp;bash$ . edksetup.sh &nbsp;&nbsp;</span></font>
+</span></p>
+<br>
+@snapend
+
 
 
 Note:
@@ -281,20 +361,41 @@ bash$ . edksetup.sh
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
 
 
----?image=/assets/images/slides/Slide20.JPG
+---?image=/assets/images/slidesx/Slide15.JPG
 @title[Build Ovmf Edk2 -update target.txt]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Update Target.txt</font></span></p>
+
+@snap[north-east span-50 ]
+<br>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Update Target.txt</font></span></p>
+@snapend
+
+
+@snap[north-west span-100 ]
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+ @size[1.1em](What is OVMF?)<br>
+   Open Virtual Machine Firmware - Build with edk2<br>
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+&nbsp;&nbsp;bash$ gedit Conf/target.txt&nbsp;&nbsp;</span></font><br>
 <br>
 <br>
 <br>
 <br>
 <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save and Exit<br>
+<font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+&nbsp;&nbsp;bash$ cd ~src/edk2 &nbsp;&nbsp;<br>
+&nbsp;&nbsp;bash$ build  &nbsp;&nbsp;&nbsp;&nbsp;</span></font>
+</span></p>
 <br>
-<br>
-<br>
+@snapend
+
+
+@snap[south-east span-100 ]
 <p align="right"><span style="font-size:0.6em" >More info: <a href=" https://github.com/tianocore/tianocore.github.io/wiki/OVMF "> tianocore - wiki/OVMF </a>
 </span></p>
+@snapend
 
 Note:
 - What is OVMF?
@@ -343,26 +444,43 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide22.JPG
+---?image=/assets/images/slidesx/Slide17.JPG
 @title[Build Ovmf Edk2 -build inside Terminal]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Inside Terminal</font></span></p>
+
+@snap[north-east span-50 ]
+<br>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Inside Terminal</font></span></p>
+@snapend
+
 
 Note:
-- 
+- Inside Terminal
+
 ---?image=/assets/images/slides/Slide24.JPG
 @title[Build Ovmf Edk2 -Verify]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Verify Build Succeeded</font></span></p>
-<p align="left"><span style="font-size:0.75em" >OVMF.fd should be in the Build directory<br>
-&nbsp;&nbsp;&nbsp;- For GCC5 with X64, it should be located at:</span></p>
-```shell
-        ~/src/edk2/Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd
-```
+@snap[north-east span-50 ]
+<br>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Verify Build Succeeded</font></span></p>
+@snapend
+
+
+@snap[north-west span-100 ]
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+ OVMF.fd should be in the Build directory<br>
+ &nbsp;&nbsp;&nbsp;- For GCC5 with X64, it should be located at:<br>
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+&nbsp;&nbsp; ~/src/edk2/Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd &nbsp;&nbsp;</span></font>
+</span></p>
+<br>
+@snapend
+
 
 Note:
 
----?image=/assets/images/slides/Slide29.JPG
+---?image=/assets/images/slidesx/Slide19.JPG
 @title[Build Ovmf Edk2 -invoke QEMU]
 ### <p align="right"><span class="gold" >Invoke QEMU</span><br></span></p>
 <span style="font-size:0.75em" >Change to run-ovmf directory under the home directory</span>
@@ -393,6 +511,7 @@ bash$ . RunQemu.sh
 
 
 Note:
+
 ---?image=assets/images/gitpitch-audience.jpg
 @title[End of Section]
 <br><br><br><br><br>
@@ -406,9 +525,14 @@ Note:
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lab 2: Platform HW Setup</span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup hardware for MinnowBoard Max/Turbot </span>
 
----?image=/assets/images/slides2/Slide3.JPG
+---?image=/assets/images/slidesx/Slide22.JPG
 @title[MAX/Turbot HW]
 ### <p align="right"><span class="gold" >EDK II Platform (MinnowBoard MAX/Turbot)</span></p>
+@snap[south-west span-45 ]
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.6em" >Intel<sup>&reg;</sup> Atom processor E3800 Series<br> &lpar;Formerly Bay Trail-I&rpar;</span></p>
+<br>
+@snapend
 
 Note:
 
@@ -417,20 +541,49 @@ This lab shows the build process for an actual platform – Minnowboard.org
 - Using Tianocore source
 - Open source EDK II plus open source binary obj. packages
 
----?image=/assets/images/slides2/Slide5.JPG
+---?image=/assets/images/slidesx/Slide23.JPG
 @title[Workshop Lab Hardware]
 ### <p align="right"><span class="gold" >MinnowBoard  MAX Workshop Lab Hardware</span></p>
-
+@snap[south span-100 ]
+<br>
+<p style="line-height:80%" ><span style="background-color: #FFFFFF; font-size:0.60em; "> <font color="red">&nbsp;<b>**Warning</b> do not use any other power supply than 5V or the board will Fry&nbsp;&nbsp;</font></span></p>
+<br>
+@snapend
 Note:
 
 **Warning do not use any other power supply than 5V or the board will Fry
 
 
 
----?image=/assets/images/slides2/Slide7.JPG
+---?image=/assets/images/slidesx/Slide24.JPG
 @title[Install Ubuntu “Screen”]
 ### <p align="right"><span class="gold" >Install Ubuntu “Screen”</span></p>
 
+@snap[north-west span-100 ]
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+ Terminal prompt (Cnt-Alt-T)<br>
+ <br>
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+&nbsp;&nbsp; bash$ sudo apt-get install screen &nbsp;&nbsp;<br>
+&nbsp;&nbsp; bash$ cd $Home &nbsp;&nbsp;<br>
+&nbsp;&nbsp; bash$ gedit ~.screenrc &nbsp;&nbsp;
+</span></font>
+</span></p>
+<br>
+@snapend
+
+@snap[north-east span-45 ]
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+ <font color="#87E2A9"> While in screen<br><br>
+ <b>Cnt-A</b> then <b>D</b> goes back to Terminal
+ Terminal prompt (Cnt-Alt-T)<br></font><br>
+ `bash$ screen -r` <br>
+ (Returns to screen)
+</span></p>
+ <br>
+@snapend
 
 Note:
 - Terminal prompt (Cnt-Alt-T)<br>
@@ -443,12 +596,31 @@ Note:
 
 Click Save
 
-**Warning do not use any other power supply than 5V or the board will Fry
-
----?image=/assets/images/slides2/Slide9.JPG
+---?image=/assets/images/slidesx/Slide25.JPG
 @title[Max Test System]
 ### <p align="right"><span class="gold" >Setup MinnowBoard Max Test System</span></p>
 
+@snap[north-west span-60 ]
+<br>
+<p style="line-height:50%"><span style="font-size:0.7em"><b>Hardware:</b></span></p>
+<ul style="list-style-type:none; line-height:0.5;">
+  <li><span style="font-size:0.5em">- System Under Test (SUT) - MinnowBoard Max/Turbot  </span>  </li>
+  <li><span style="font-size:0.5em">- USB to 3.3V TTL Cable  (6 pin to USB Type A) </span>  </li>
+  <li><span style="font-size:0.5em">- 5V power supply </span>  </li>
+</ul>
+<p style="line-height:50%"><span style="font-size:0.6em">
+Connect the USB w/ 6 pin header to SUT (MAX) <br><br>
+&nbsp;&nbsp;&nbsp;- black wire (pin 1) is closest to the SATA connector<br><br>
+Connect the USB Type A connector to Host (Laptop) <br><br>
+</span></p>
+<br>
+@snapend
+
+@snap[south span-100 ]
+<br>
+<p style="line-height:80%" ><span style="background-color: #FFFFFF; font-size:0.560em; "> <font color="red">&nbsp;<b>**Warning</b> do not use any other power supply than 5V or the board will Fry&nbsp;&nbsp;</font></span></p>
+<br>
+@snapend
 
 Note:
 
@@ -460,10 +632,32 @@ Note:
      -  black wire(pin 1) is closest to the SATA connector
   - Connect the USB Type A connector to Host
 
----?image=/assets/images/slides2/Slide11.JPG
+---?image=/assets/images/slidesx/Slide26.JPG
 @title[Max Test System 02]
 ### <p align="right"><span class="gold" >Setup MinnowBoard Max Test System</span></p>
+@snap[north-west span-100 ]
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+ Open Terminal prompt (Cnt-Alt-T)<br>
+ <br>
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+&nbsp;&nbsp; bash$ dmesg &nbsp;&nbsp;<br>
+&nbsp;&nbsp; bash$ sudo chmod 666 /dev/ttyUSB@color[cyan](<i>n</i>) &nbsp;&nbsp;
+</span></font>
+</span></p>
+<br>
+@snapend
 
+@snap[north-east span-40 ]
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.60em;  " >
+ <br>
+ <br>
+ (to check which USB port is assigned)<br>
+ (where @color[cyan](<i>n</i>) is the FTDI number ) &nbsp;&nbsp;
+</span></p>
+<br>
+@snapend
 
 Note:
 
@@ -475,9 +669,43 @@ bash$ sudo chmod 666 /dev/ttyUSBn	#(where n is the FTDI number)
 - dmesg command  shows which - ttyUSBn
 
 
----?image=/assets/images/slides2/Slide13.JPG
+---?image=/assets/images/slidesx/Slide27.JPG
 @title[Power on MinnowBoard MAX]
 ### <p align="right"><span class="gold" >Power on MinnowBoard MAX</span></p>
+@snap[north-west span-100 ]
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+ Connect the Power supply cable to the MinnowBoard  MAX <br>
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+&nbsp;&nbsp; bash$ screen /dev/ttyUSB@color[cyan](<i>n</i>) 115200 &nbsp;&nbsp;
+</span></font><br>
+MinnowBoard MAX should boot to the UEFI Shell in the Terminal – Screen
+</span></p>
+<br>
+@snapend
+
+@snap[north-east span-30 ]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.60em;  " >
+ <br>
+ <br>
+ @color[yellow](While in Screen<br> <b>Cnt-A</b> then <b>D</b> goes back to terminal.)<br>
+ <br>
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.450em;"> 
+&nbsp;&nbsp; bash$ screen-r &nbsp;&nbsp;
+</span></font><br> 
+(returns to Screen)
+  &nbsp;&nbsp;
+</span></p>
+<br>
+@snapend
+
+
 
 
 Note:
