@@ -829,18 +829,16 @@ bash$ git clone https://github.com/tianocore-training/PlatformBuildLab_FW.git
 @title[MinnowBoard MAX Lab Setup]
 ### <p align="right"><span class="gold" >MinnowBoard MAX Lab Setup</span></p>
 
-@snap[north-west span-70 ]
+@snap[north-west span-100 ]
 <br>
-<br>
-<br>
-<p style="line-height:70%"><span style="font-size:0.8em">
+<p style="line-height:70%"><span style="font-size:0.8em"><br>
 @color[#87E2A9](Previous Lab Setup Requirements)<br></span>
- <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.550em;"> 
 &nbsp;&nbsp; bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm  &nbsp;&nbsp;
 </span></font><br>
 <span style="font-size:0.8em">
 @color[#87E2A9](Additional Lab Setup -)</span><br>
-<span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;
+<span style="font-size:0.55em">&nbsp;&nbsp;&nbsp;
 @color[#87E2A9]( `PlatformLab_FW/FW/PlatformBuildLab`) 
 </span></p>
 
@@ -853,7 +851,7 @@ bash$ git clone https://github.com/tianocore-training/PlatformBuildLab_FW.git
 &bull;Max<br>&nbsp;&nbsp;
 &bull;BuildToolsMax.tar.gz<br>&nbsp;&nbsp;
 &bull;At the Terminal prompt - install Screen utility for Serial Console to run UEFI Shell<br>&nbsp;&nbsp;
- <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.750em;"> 
 &nbsp;&nbsp; bash$ sudo apt-get screen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></font>
 &nbsp;&nbsp;
@@ -861,13 +859,13 @@ bash$ git clone https://github.com/tianocore-training/PlatformBuildLab_FW.git
 <br>
 @snapend
 
-@snap[south-east span-80 ]
+@snap[south-east span-70 ]
 <p style="line-height:40%" align="left"><span style="font-size:0.55em"><font color="yellow">
 <br>&nbsp;&nbsp;
 &hyphen;&nbsp;&nbsp;MinnowBoard Max Project source code<br>&nbsp;&nbsp;
 &hyphen;&nbsp;&nbsp;Build told for GCC compiler<br>&nbsp;&nbsp;
 &nbsp;&nbsp;<br>&nbsp;&nbsp;
-&nbsp;&nbsp;<br>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
 </font></snap></p>
 <br>
 @snapend
@@ -891,11 +889,9 @@ bash$ sudo apt-get install screen
 @title[Get the Minnowboard Max Source]
 ### <p align="right"><span class="gold" >Copy Minnowboard Max Source</span></p>
 
-@snap[north-west span-70 ]
+@snap[north-west span-100 ]
 <br>
-<br>
-<br>
-<p style="line-height:70%"><span style="font-size:0.8em">
+<p style="line-height:70%"><span style="font-size:0.8em"><br>
 Open a terminal prompt(Alt-Cnt-T)<br>
 Create a working  space source directory under the home directory<br>
 </span>
@@ -918,11 +914,11 @@ Note:
 ---?image=/assets/images/slidesx/Slide36.JPG
 @title[Get the BaseTools]
 ### <p align="right"><span class="gold" >Get the BaseTools for Max  </span></p>
-@snap[north-west span-70 ]
+@snap[north-west span-100 ]
 <br>
 <br>
 <p style="line-height:70%"><span style="font-size:0.8em">
-Rename or <b>mv</b> the directory "`~src/Max/edk2/BaseTools`"<br>
+Rename or <b>mv</b> the directory @size[.8em]("`~src/Max/edk2/BaseTools`")<br>
 </span>
  <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp; bash$ cd ~src/Max/edk2 &nbsp;&nbsp;&nbsp;&nbsp;<br>
@@ -930,7 +926,7 @@ Rename or <b>mv</b> the directory "`~src/Max/edk2/BaseTools`"<br>
 &nbsp;&nbsp; bash$ tar -xf BaseToolsMax.tar.xz &nbsp;&nbsp;<br>
 </span></font><br>
 <span style="font-size:0.7em">
-Extract the file `~FW/PlatformBuildLab/BaseToolsMax.tar.gz`  to  `~src/Max/edk2`
+Extract the file @size[.8em](`~FW/PlatformBuildLab/BaseToolsMax.tar.gz`)  to  @size[.8em](`~src/Max/edk2`)
 </span></p>
 
 @snapend
@@ -1035,14 +1031,17 @@ There is also this capability that is part of the .dsc but many developers have 
 @title[Build Process for DEBUG]
 ### <p align="right"><span class="gold" >Build Process for DEBUG </span></p>
 
-@snap[north-west span-20  fragment]
+@snap[north-west span-20  ]
+<br>
+<br>
 <br>
 @size[1.125em](<font color="yellow"> &#10104;</font>)
 @snapend
 
-@snap[north-east span-95  fragment]
+@snap[north-east span-95  ]
 <br>
-<span style="font-size:0.9em">From Terminal Prompt enter:  &nbsp;&nbsp;</span><span style="font-size:0.6em"><font color="yellow">Note: <i> the Build will Pause</i></font></span>
+<br>
+<p align="left"><span style="font-size:0.85em">From Terminal Prompt enter:  &nbsp;&nbsp;</span><span style="font-size:0.6em"><font color="yellow">Note: <i> the Build will Pause</i></font></span></p>
 <pre>
 ```
 bash$ cd Vlv2TbltDevicePkg 
@@ -1152,19 +1151,22 @@ Note:
 many will have "ifdef" statements in the major .dsc file in order to enable a feature or not
 
 
----?image=/assets/images/slides3/Slide31.JPG
+---?image=/assets/images/slidesx/Slide44.JPG
 @title[Build Process for Release]
 ### <p align="right"><span class="gold" >Build Process for Release</span></p>
 
 
-@snap[north-west span-20  fragment]
+@snap[north-west span-20  ]
+<br>
+<br>
 <br>
 @size[1.125em](<font color="yellow"> &#10104;</font>)
 @snapend
 
-@snap[north-east span-95  fragment]
+@snap[north-east span-95  ]
 <br>
-<span style="font-size:0.9em">From Terminal Prompt enter:  &nbsp;&nbsp;</span><span style="font-size:0.6em"><font color="yellow">Note: <i> the Build will Pause</i></font></span>
+<br>
+<p align="left"><span style="font-size:0.85em">From Terminal Prompt enter:  &nbsp;&nbsp;</span><span style="font-size:0.6em"><font color="yellow">Note: <i> the Build will Pause</i></font></span></p>
 <pre>
 ```
 bash$ cd Vlv2TbltDevicePkg 
@@ -1175,6 +1177,8 @@ bash$ . Build_IFWI.sh MNW2 Release
 
 
 @snap[north-east span-30  fragment]
+<br>
+<br>
 <br>
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.8em"><br></span></p>
@@ -1219,15 +1223,18 @@ Note:
 - Faster boot than DEBUG
 
  
----?image=/assets/images/slides3/Slide39.JPG
+---?image=/assets/images/slidesx/Slide46.JPG
 @title[Build Process Completed]
 ### <p align="right"><span class="gold" >Build Process Completed</span></p>
+@snap[north-west span-100  ]
+<br>
+<br>
 <span style="font-size:0.9em" >@size[1.25em](<font color="yellow"> &#10105;</font>)&nbsp;&nbsp;Locate the build .BIN image</span>
+@snapend
 
 @snap[south-west span-100  ]
-<p style="line-height:80%" align="left"><span style="font-size:0.9em" >
-The platform build script post build process will stitch the multiple firmware volumes generated by the EDK II build process into the final <b> .BIN</b> image.<br>
-The script displays the location of the final <b>.BIN </b> file<br><br>
+<p style="line-height:70%" align="left"><span style="font-size:0.7em" >
+The platform build script post build process will stitch the multiple firmware volumes generated by the EDK II build process into the final <b> .BIN</b> image.
 </span></p>
 @snapend
 
@@ -1252,7 +1259,6 @@ Note:
 <br>
 <span style="font-size:0.9em" >@size[1.25em](<font color="yellow"> &#10106;</font>)&nbsp;&nbsp;Flash the binary image</span>
 @snapend
-<br>
 1.  <span style="font-size:0.85em" >&nbsp;&nbsp;Access Max Binary image file from build folder</span>
   - <span style="font-size:0.75em" >`~src/Max/Vlv2TbltDevicePkg/Stitch`</span>
   - <span style="font-size:0.75em" >DEBUG 	MNW2MAX1.X64.D_0099_01_GCC.bin</span>
@@ -1311,10 +1317,9 @@ Reset and boot new firmware
 <span style="font-size:0.9em" >@size[1.25em](<font color="yellow"> &#10107;</font>)&nbsp;&nbsp;Reboot and Verify</span>
 @snapend
 
-<br>
-- <span style="font-size:0.85em" >Verify that the Firmware was updated by checking the Date</span>
-- <span style="font-size:0.85em" >At the shell prompt type “exit”</span>
-- <span style="font-size:0.85em" >The EDK II front page will show the BIOS ID with Date/time stamp</span>
+- <span style="font-size:0.8em" >Verify that the Firmware was updated by checking the Date</span>
+- <span style="font-size:0.8em" >At the shell prompt type “exit”</span>
+- <span style="font-size:0.8em" >The EDK II front page will show the BIOS ID with Date/time stamp</span>
 
  
 Note:
