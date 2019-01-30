@@ -872,7 +872,7 @@ At the Terminal prompt - install Screen utility for Serial Console to run UEFI S
 <p style="line-height:40%" align="left"><span style="font-size:0.55em"><font color="yellow">
 <br>&nbsp;&nbsp;
 &hyphen;&nbsp;&nbsp;MinnowBoard Max Project source code<br>&nbsp;&nbsp;
-&hyphen;&nbsp;&nbsp;Build told for GCC compiler<br><br>&nbsp;&nbsp;
+&hyphen;&nbsp;&nbsp;Build tools for GCC compiler<br><br>&nbsp;&nbsp;
 &nbsp;&nbsp;<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;
 </font></snap></p>
