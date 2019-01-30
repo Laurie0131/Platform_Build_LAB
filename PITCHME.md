@@ -346,7 +346,7 @@ Note:
 @snapend
 
 @snap[south-west span-100 ]
-<p style="line-height:60%" align="left"><span style="font-size:0.750em;  " >
+<p style="line-height:60%" align="left"><span style="font-size:0.650em;  " >
 <font face="Consolas"><span style="background-color: #000000; "> 
 &nbsp;&nbsp;bash$ . edksetup.sh &nbsp;&nbsp;</span></font>
 </span></p>
@@ -436,9 +436,9 @@ bash$ build
 @title[Build Ovmf Edk2 -update target.txt]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
 
-@snap[north-east span-50 ]
+@snap[north-east span-65 ]
 <br>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Update Target.txt - COPY and PASTE</font></span></p>
+<p align="right"><span style="font-size:0.75em" ><font color="white">– Update Target.txt - COPY and PASTE</font></span></p>
 @snapend
 <br>
 <span style="font-size:0.9em" >Edit the Conf/target.txt file - Copy and Paste</span>
@@ -1264,7 +1264,7 @@ Note:
 &nbsp;&nbsp;&nbsp;&nbsp;  - <span style="font-size:0.75em" >DEBUG 	MNW2MAX1.X64.D_0099_01_GCC.bin</span><br>
 &nbsp;&nbsp;&nbsp;&nbsp;  - <span style="font-size:0.75em" >RELEASE	MNW2MAX1.X64.R_0099_01_GCC.bin</span><br>
 <span style="font-size:0.85em" >2. &nbsp;&nbsp;Copy BIN files to a USB Thumb drive</span><br>
-<span style="font-size:0.85em" >3. &nbsp;&nbsp;Copy </span><span style="font-size:0.65em" >`MinnowBoard.MAX.FirmwareUpdateX64.efi`</span><span style="font-size:0.85em" > to a USB thumb<br>&nbsp;&nbsp; &nbsp;&nbsp;drive from `~/FW/PlatformBuildLab`</span><br>
+<span style="font-size:0.85em" >3. &nbsp;&nbsp;Copy </span><span style="font-size:0.65em" >`MinnowBoard.MAX.FirmwareUpdateX64.efi`</span><span style="font-size:0.85em" > to a USB thumb<br>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;drive from `~/FW/PlatformBuildLab`</span><br>
 <span style="font-size:0.85em" >4. &nbsp;&nbsp;Boot to UEFI Shell on Max and type "`FS0:`"</span>
 @snapend 
  
