@@ -337,6 +337,9 @@ Note:
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
  8. Run edksetup <span style="font-size:0.50em;  " >(note This will need to be done for every new Terminal prompt)</span><br>
 </span></p>
 <br>
@@ -383,8 +386,6 @@ bash$ . edksetup.sh
    Open Virtual Machine Firmware - Build with edk2<br>
  <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp;bash$ gedit Conf/target.txt&nbsp;&nbsp;</span></font><br>
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -658,7 +659,7 @@ Note:
 <p style="line-height:70%" align="left"><span style="font-size:0.80em;  " >
  Open Terminal prompt (Cnt-Alt-T)<br>
  <br>
- <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.60em;"> 
 &nbsp;&nbsp; bash$ dmesg &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ sudo chmod 666 /dev/ttyUSB@color[cyan](<i>n</i>) &nbsp;&nbsp;
 </span></font>
@@ -666,10 +667,10 @@ Note:
 <br>
 @snapend
 
-@snap[north-east span-60 ]
+@snap[north-east span-55 ]
 <br>
 <br>
-<p style="line-height:70%" align="left"><span style="font-size:0.65em;  " >
+<p style="line-height:70%" align="left"><span style="font-size:0.60em;  " >
  <br>
  <br>
  (to check which USB port is assigned)<br>
