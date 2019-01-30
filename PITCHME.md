@@ -104,9 +104,7 @@ bash$ mkdir hda-contents
 ```
 bash$ gedit RunQemu.sh
 ```
-<br>
-<br>
-<span style="font-size:0.9em" >Save and Exit</span>
+
 
 Note:
 Create a run-ovmf directory under the home directory
@@ -270,7 +268,7 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 <br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
 2. Open a terminal prompt (Alt-Cnt-T)<br>
-3. Create a working space directory "src" under the home directory<br>&nbsp;&nbsp;<font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+3. Create a working space directory "src" under the home directory<br>&nbsp;&nbsp;<font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp;bash$ mkdir ~src&nbsp;&nbsp;</span></font><br>
 4. From the downloaded "`Lab_Material_FW`" folder, <b>copy</b>&nbsp;and &nbsp;<b>paste</b> folder &nbsp;"`.../FW/edk2`"&nbsp; to &nbsp;`~src`
 </span></p>
@@ -301,7 +299,7 @@ bash$ mkdir ~src
 <br>
 <br>
 <p style="line-height:80%" align="left"><span style="font-size:0.750em;  " >
- 5. Rename or `mv` the direcotry "`~src/edk2/BaseTools`"<br><font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+ 5. Rename or `mv` the direcotry "`~src/edk2/BaseTools`"<br><font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp;bash$ cd ~src/edk2&nbsp;&nbsp;<br>
 &nbsp;&nbsp;bash$ mv BaseTools BaseToolsX&nbsp;&nbsp;</span></font><br>
  6. Extract the file `~FW/edk2Linux/BaseTools.tar.gz`  to  `~src/edk2`
@@ -329,7 +327,7 @@ Note:
 @snap[north-west span-100 ]
 <br>
 <p style="line-height:60%" align="left"><span style="font-size:0.750em;  " ><br>
- 7. Run Make from the Terminal prompt <br><font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+ 7. Run Make from the Terminal prompt <br><font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp;bash$ cd ~src/edk2&nbsp;&nbsp;<br>
 &nbsp;&nbsp;bash$ make -C BaseTools&nbsp;&nbsp;</span></font><br>
 <br>
@@ -337,14 +335,19 @@ Note:
 <br>
 <br>
 <br>
- 8. Run edksetup (note This will need to be done for every new Terminal prompt)<br>
-<font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
-&nbsp;&nbsp;bash$ . edksetup.sh &nbsp;&nbsp;</span></font>
+<br>
+<br>
+ 8. Run edksetup <span style="font-size:0.50em;  " >(note This will need to be done for every new Terminal prompt)</span><br>
 </span></p>
 <br>
 @snapend
 
-
+@snap[south-west span-100 ]
+<p style="line-height:60%" align="left"><span style="font-size:0.750em;  " >
+<font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
+&nbsp;&nbsp;bash$ . edksetup.sh &nbsp;&nbsp;</span></font>
+</span></p>
+@snapend
 
 Note:
 - Run Make from the Terminal prompt
@@ -375,11 +378,10 @@ bash$ . edksetup.sh
 @snap[north-west span-100 ]
 <br>
 <br>
-<br>
-<p style="line-height:60%" align="left"><span style="font-size:0.80em;  " >
+<p style="line-height:70%" align="left"><span style="font-size:0.80em;  " >
  @size[1.1em](What is OVMF?)<br>
    Open Virtual Machine Firmware - Build with edk2<br>
- <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp;bash$ gedit Conf/target.txt&nbsp;&nbsp;</span></font><br>
 <br>
 <br>
@@ -388,9 +390,12 @@ bash$ . edksetup.sh
 <br>
 <br>
 <br>
-
+<br>
+<br>
+<br>
+<br>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save and Exit<br><br>
-<font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+<font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp;bash$ cd ~src/edk2 &nbsp;&nbsp;<br>
 &nbsp;&nbsp;bash$ build  &nbsp;&nbsp;&nbsp;&nbsp;</span></font>
 </span></p>
@@ -475,11 +480,10 @@ Note:
 @snap[north-west span-100 ]
 <br>
 <br>
-<br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
  OVMF.fd should be in the Build directory<br>
  &nbsp;&nbsp;&nbsp;- For GCC5 with X64, it should be located at:<br>
- <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp; ~/src/edk2/Build/OvmfX64/DEBUG_GCC5/FV/OVMF.fd &nbsp;&nbsp;</span></font>
 </span></p>
 <br>
@@ -588,10 +592,10 @@ Note:
 <br>
 <br>
 <p style="line-height:70%" align="left"><span style="font-size:0.60em;  " >
- <font color="#87E2A9"> While in screen<br><br>
+ <font color="#87E2A9"> While in screen<br>
  <b>Cnt-A</b> then <b>D</b> goes back to Terminal
  <br></font><br>
- @size[.5em](`bash$ screen -r`) <br>
+ @size[.9em](`bash$ screen -r`) <br>
  (Returns to screen)
 </span></p>
  <br>
@@ -617,7 +621,7 @@ Click Save
 <br>
 <br>
 <p style="line-height:50%"><span style="font-size:0.7em"><b>Hardware:</b></span></p>
-<ul style="list-style-type:none; line-height:0.5;">
+<ul style="list-style-type:none; line-height:0.6;">
   <li><span style="font-size:0.5em">- System Under Test (SUT) - MinnowBoard Max/Turbot  </span>  </li>
   <li><span style="font-size:0.5em">- USB to 3.3V TTL Cable  (6 pin to USB Type A) </span>  </li>
   <li><span style="font-size:0.5em">- 5V power supply </span>  </li>
@@ -651,10 +655,10 @@ Note:
 @snap[north-west span-100 ]
 <br>
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+<p style="line-height:70%" align="left"><span style="font-size:0.80em;  " >
  Open Terminal prompt (Cnt-Alt-T)<br>
  <br>
- <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp; bash$ dmesg &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ sudo chmod 666 /dev/ttyUSB@color[cyan](<i>n</i>) &nbsp;&nbsp;
 </span></font>
@@ -665,7 +669,7 @@ Note:
 @snap[north-east span-60 ]
 <br>
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.560em;  " >
+<p style="line-height:70%" align="left"><span style="font-size:0.65em;  " >
  <br>
  <br>
  (to check which USB port is assigned)<br>
