@@ -582,7 +582,6 @@ Note:
 @snap[north-west span-100 ]
 <br>
 <br>
-<br>
 <p style="line-height:70%" align="left"><span style="font-size:0.80em;  " >
  Terminal prompt (Cnt-Alt-T)<br>
  Install "Screen"
@@ -592,14 +591,13 @@ Note:
 &nbsp;&nbsp; bash$ sudo apt-get install screen &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ cd $Home &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ gedit ~.screenrc &nbsp;&nbsp;
-</span></font><br>
+</span></font><br><br>
 Inside the editor, type<br> @size[.8em]("`shell /bin/bash`") &nbsp;&nbsp;then save
 </span></p>
 <br>
 @snapend
 
 @snap[north-east span-45 ]
-<br>
 <br>
 <br>
 <p style="line-height:70%" align="left"><span style="font-size:0.60em;  " >
