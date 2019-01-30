@@ -328,7 +328,7 @@ Note:
 <br>
 <p style="line-height:60%" align="left"><span style="font-size:0.750em;  " ><br>
  7. Run Make from the Terminal prompt <br><font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
-&nbsp;&nbsp;bash$ cd ~src/edk2&nbsp;&nbsp;<br>
+&nbsp;&nbsp;bash$ cd ~src/edk2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
 &nbsp;&nbsp;bash$ make -C BaseTools&nbsp;&nbsp;</span></font><br>
 <br>
 <br>
@@ -340,16 +340,18 @@ Note:
 <br>
 <br>
 <br>
- 8. Run edksetup <span style="font-size:0.50em;  " >(note This will need to be done for every new Terminal prompt)</span><br>
+ 8. Run edksetup <span style="font-size:0.55em;  " >(note This will need to be done for every new Terminal prompt)</span><br>
 </span></p>
 <br>
 @snapend
 
 @snap[south-west span-100 ]
 <p style="line-height:60%" align="left"><span style="font-size:0.750em;  " >
-<font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
+<font face="Consolas"><span style="background-color: #000000; "> 
 &nbsp;&nbsp;bash$ . edksetup.sh &nbsp;&nbsp;</span></font>
 </span></p>
+<br>
+<br>
 @snapend
 
 Note:
@@ -433,7 +435,12 @@ bash$ build
 +++
 @title[Build Ovmf Edk2 -update target.txt]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
-<p align="right"><span style="font-size:0.8em" >–Update Target.txt - COPY and PASTE</span></p>
+
+@snap[north-east span-50 ]
+<br>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Update Target.txt - COPY and PASTE</font></span></p>
+@snapend
+<br>
 <span style="font-size:0.9em" >Edit the Conf/target.txt file - Copy and Paste</span>
 ```
 bash$ gedit Conf/target.txt
@@ -759,19 +766,23 @@ bash$ screen /dev/ttyUSBn 115200
 
 
 
----?image=/assets/images/slides3/Slide3.JPG
+---?image=/assets/images/slidesx/Slide30.JPG
 @title[MinnowBoard MAX/ Turbot Platform]
 ### <p align="right"><span class="gold" >EDK II Platform (MinnowBoard MAX/Turbot)</span></p>
 
-
+@snap[south-west span-45 ]
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.6em" >Intel<sup>&reg;</sup> Atom processor E3800 Series<br> &lpar;Formerly Bay Trail-I&rpar;</span></p>
+<br>
+@snapend
 Note:
 -  Intel® Atom processor E3800 Series  (Formerly Bay Trail-I)
 
 
----?image=/assets/images/slides3/Slide5.JPG
+---?image=/assets/images/slidesx/Slide31.JPG
 @title[MinnowBoard MAX/ Turbot Platform]
 <br>
-<p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
+<p align="left"><span class="gold" ><b>Where to get Open Source<BR> MinnowBoard Max</b></span></p>
 <br>
 - <span style="font-size:0.9em"><font  color="yellow">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
   - <span style="font-size:0.9em">V 1.00 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
@@ -781,14 +792,14 @@ Note:
 Note:
 - Step by step if NOT downloading Lab release of Minnowboard MAX/Turbot 
 
----?image=/assets/images/slides3/Slide7.JPG
+---?image=/assets/images/slidesx/Slide32.JPG
 @title[MinnowBoard MAX/ Turbot Platform]
 <br>
-<p align="left"><span class="gold" >Where to get Open Source<BR> MinnowBoard Max</span></p>
+<p align="left"><span class="gold" ><b>Where to get Open Source<BR> MinnowBoard Max</b></span></p>
 <br>
 - <span style="font-size:0.9em"><font  color="white">Open Source </font><a href="https://github.com/tianocore/tianocore.github.io/wiki/MinnowBoardMax"> Max Wiki</a></span>
   - <span style="font-size:0.9em">V 1.00 -<a href="https://github.com/tianocore/edk2-platforms/tree/devel-MinnowBoardMax-UDK2017"> Github Link</a></span>
-- <span style="font-size:0.9em"><font  color="Yellow">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
+- <span style="font-size:0.9em"><font  color="yellow">Binary Object Modules:<br> </font><a href="https://firmware.intel.com/projects/minnowboard-max ">firmware.intel.com</a></span>
 - <span style="font-size:0.9em">How to Build<a href="https://firmware.intel.com/sites/default/files/minnowboard_max-rel_1_00-releasenotes.txt"> Release Notes</a></span>
 
 Note:
@@ -814,9 +825,52 @@ bash$ git clone https://github.com/tianocore-training/PlatformBuildLab_FW.git
 	   . . .
 ```
 
----?image=/assets/images/slides3/Slide9.JPG
+---?image=/assets/images/slidesx/Slide34.JPG
 @title[MinnowBoard MAX Lab Setup]
 ### <p align="right"><span class="gold" >MinnowBoard MAX Lab Setup</span></p>
+
+@snap[north-west span-70 ]
+<br>
+<br>
+<br>
+<p style="line-height:70%"><span style="font-size:0.8em">
+@color[#87E2A9](Previous Lab Setup Requirements)<br></span>
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
+&nbsp;&nbsp; bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm  &nbsp;&nbsp;
+</span></font><br>
+<span style="font-size:0.8em">
+@color[#87E2A9](Additional Lab Setup -)</span><br>
+<span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;
+@color[#87E2A9]( `PlatformLab_FW/FW/PlatformBuildLab`) 
+</span></p>
+
+@snapend
+
+
+@snap[south-west span-100 ]
+<p style="line-height:40%" align="left"><span style="font-size:0.55em">
+<b>Directories:</b><br>&nbsp;&nbsp;
+&bull;Max<br>&nbsp;&nbsp;
+&bull;BuildToolsMax.tar.gz<br>&nbsp;&nbsp;
+&bull;At the Terminal prompt - install Screen utility for Serial Console to run UEFI Shell<br>&nbsp;&nbsp;
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
+&nbsp;&nbsp; bash$ sudo apt-get screen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font>
+&nbsp;&nbsp;
+</snap></p>
+<br>
+@snapend
+
+@snap[south-east span-80 ]
+<p style="line-height:40%" align="left"><span style="font-size:0.55em"><font color="yellow">
+<br>&nbsp;&nbsp;
+&hyphen;&nbsp;&nbsp;MinnowBoard Max Project source code<br>&nbsp;&nbsp;
+&hyphen;&nbsp;&nbsp;Build told for GCC compiler<br>&nbsp;&nbsp;
+&nbsp;&nbsp;<br>&nbsp;&nbsp;
+&nbsp;&nbsp;<br>&nbsp;&nbsp;
+</font></snap></p>
+<br>
+@snapend
 
 
 Note:
@@ -833,10 +887,26 @@ Additional Lab Setup – `       ~src/FW/PlatformBuildLab`
 bash$ sudo apt-get install screen
 ```	   
 
----?image=/assets/images/slides3/Slide11.JPG
+---?image=/assets/images/slidesx/Slide35.JPG
 @title[Get the Minnowboard Max Source]
 ### <p align="right"><span class="gold" >Copy Minnowboard Max Source</span></p>
 
+@snap[north-west span-70 ]
+<br>
+<br>
+<br>
+<p style="line-height:70%"><span style="font-size:0.8em">
+Open a terminal prompt(Alt-Cnt-T)<br>
+Create a working  space source directory under the home directory<br>
+</span>
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
+&nbsp;&nbsp; bash$ mkdir ~src &nbsp;&nbsp;&nbsp;&nbsp;
+</span></font><br>
+<span style="font-size:0.7em">
+From the `FW/PlatformBuildLab` folder, copy and paste folder "`~FW/Max`" to `~src`
+</span></p>
+
+@snapend
 Note:
 - Open a terminal prompt  (Alt-Cnt-T)
 - Create a working  space source directory under the home directory
@@ -845,10 +915,25 @@ Note:
  
 
 
----?image=/assets/images/slides3/Slide14.JPG
+---?image=/assets/images/slidesx/Slide36.JPG
 @title[Get the BaseTools]
 ### <p align="right"><span class="gold" >Get the BaseTools for Max  </span></p>
+@snap[north-west span-70 ]
+<br>
+<br>
+<p style="line-height:70%"><span style="font-size:0.8em">
+Rename or <b>mv</b> the directory "`~src/Max/edk2/BaseTools`"<br>
+</span>
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
+&nbsp;&nbsp; bash$ cd ~src/Max/edk2 &nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp; bash$ mv BaseTools BaseToolsX &nbsp;&nbsp;<br>
+&nbsp;&nbsp; bash$ tar -xf BaseToolsMax.tar.xz &nbsp;&nbsp;<br>
+</span></font><br>
+<span style="font-size:0.7em">
+Extract the file `~FW/PlatformBuildLab/BaseToolsMax.tar.gz`  to  `~src/Max/edk2`
+</span></p>
 
+@snapend
 
 Note:
 
@@ -859,8 +944,10 @@ Note:
 ```
 
 - Extract the file ~FW/PlatformBuildLab/BaseToolsMax.tar.gz  to  ~src/Max/edk2
-
----?image=/assets/images/slides3/Slide16.JPG
+  - bash$ tar -xf BaseToolsMax.tar.xz 
+  
+  
+---?image=/assets/images/slidesx/Slide37.JPG
 @title[Platform Source Directory Structure]
 ### <p align="right"><span class="gold" >Platform Source Directory Structure </span></p>
 
@@ -869,18 +956,19 @@ Note:
 -  Platform Source Directory Structure
    -  Build from /Vlv2TbltDevicePkg  directory
 
+
 ---
 @title[Steps to Build & Install Firmware]
-<br><br>
+<br>
 ### <p align="center"><span class="gold" >Steps to Build & Install Firmware</span></p>
-<ol>
-  <li><span style="font-size:0.9em">Open Terminal prompt (Cnt-Alt-T)</span></li>
-  <li><span style="font-size:0.9em"> Cd to  project directory :    `$HOME/src/Max/edk2-platforms/Vlv2TbltDevicePkg` </span></li>
-  <li><span style="font-size:0.9em">Invoke the build process</span></li>
-  <li><span style="font-size:0.9em"> Locate build output (.BIN file for BIOS image)</span></li>
-  <li><span style="font-size:0.9em"> Flash binary image onto the platform</span></li>
-  <li><span style="font-size:0.9em"> Reset and boot new firmware to UEFI Shell</span></li>
-</ol>
+<ul style="list-style-type:none; line-height:0.9;">
+  <li><span style="font-size:0.9em">@size[1.125em](<font color="yellow"> &#10102;</font>)&nbsp; Open Terminal prompt & Cd to <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em]( `$HOME/src/Max/edk2-platforms/Vlv2TbltDevicePkg`)</span></li>
+  <li><span style="font-size:0.9em">@size[1.125em](<font color="yellow"> &#10103;</font>)&nbsp; Fix-up "chmod" script files</span></li>
+  <li><span style="font-size:0.9em">@size[1.125em](<font color="yellow"> &#10104;</font>)&nbsp; Invoke the build process</span></li>
+  <li><span style="font-size:0.9em">@size[1.125em](<font color="yellow"> &#10105;</font>)&nbsp; Locate build output (.BIN file for BIOS image)</span></li>
+  <li><span style="font-size:0.9em">@size[1.125em](<font color="yellow"> &#10106;</font>)&nbsp; Flash binary image onto the platform</span></li>
+  <li><span style="font-size:0.9em">@size[1.125em](<font color="yellow"> &#10107;</font>)&nbsp; Reset and verify the new firmware</span></li>
+</ul>
 <br>
 <br>
 <span style="font-size:0.9em"><font color="yellow"><i><b>Next slides will follow the above steps</b></i></font></span>
@@ -889,14 +977,18 @@ Note:
 Note:
 
 Slide says it all
+
+
  
 ---
-@title[fix shell properties ]
+@title[fix-up shell properties ]
 <br>
-<p align="left"><span class="gold" >Fix Script Properties to Execute</span></p>
-- Open Terminal prompt (Cnt-Alt-T)
-- Cd to work space directory
-- Fix script files to "execute"  with `chmod +x`
+<p align="left"><span class="gold" >@size[1.1](<b>Fix-up Script Properties to Execute</b>)</span></p>
+<p style="line-height:70%"><span style="font-size:0.8em">
+@size[1.25em](<font color="yellow"> &#10102;</font>)&nbsp;&nbsp;Open Terminal prompt (Cnt-Alt-T) & <br>
+&nbsp; &nbsp; &nbsp; &nbsp; Cd to work space directory<br>
+@size[1.25em](<font color="yellow"> &#10103;</font>)&nbsp;&nbsp;Fix script files to "execute"  with `chmod +x`
+</span></p>
 <BR>
 
 ```
@@ -915,100 +1007,204 @@ Slide says it all
 Note:
  Slide says it all
 
----?image=/assets/images/slides3/Slide20.JPG
+
+---
+@title[Platform Build Scripts]
+<p align="right"><span class="gold" >@size[1.1em](<b>Platform Build Scripts</b>)</span></p>
+
+@box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" align="center"><span style="font-size:0.8em">Platform Build Scripts<br>&nbsp; </span></p>)
+<p style="line-height:80%"><span style="font-size:0.8em">Many Platform have a bash or bat script file to pre or post process the EDK II build process</span></p>
+
+<p style="line-height:70%"><span style="font-size:0.7em">For MinnowBoard MAX : `Build_IFWI.bat or Build_IFWI.sh` <br></span>
+<span style="font-size:0.7em"><Example:<br>
+&nbsp;Build_IFWI  <br>
+&nbsp;&nbsp;&ndash; pre build processing <br>
+&nbsp;&nbsp;&ndash;  calls `vlv_bld` - a platform script to preform the EDK II `build` <br> 
+&nbsp;&nbsp;&ndash; determines date <br>
+&nbsp;&nbsp;&ndash; board ID<br>
+&nbsp;&nbsp;&ndash; post build stitching<br>
+</span></p>
+
+Note:
+
+For the platform edk II builds usually a script is called that will do pre and post build processing.  
+There is also this capability that is part of the .dsc but many developers have not taken advantage of this feature
+
+
+---?image=/assets/images/slidesx/Slide41.JPG
 @title[Build Process for DEBUG]
 ### <p align="right"><span class="gold" >Build Process for DEBUG </span></p>
-<span style="font-size:0.9em">From Terminal Prompt enter:  &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size:0.6em"><font color="yellow">Note: <i> the Build will Pause</i></font></span>
+
+@snap[north-west span-20  fragment]
+<br>
+@size[1.125em](<font color="yellow"> &#10104;</font>)
+@snapend
+
+@snap[north-east span-95  fragment]
+<br>
+<span style="font-size:0.9em">From Terminal Prompt enter:  &nbsp;&nbsp;</span><span style="font-size:0.6em"><font color="yellow">Note: <i> the Build will Pause</i></font></span>
+<pre>
 ```
 bash$ cd Vlv2TbltDevicePkg 
 bash$ . Build_IFWI.sh MNW2 Debug
 ```
-
-Note:
- Slide says it all
-
----?image=/assets/images/slides3/Slide22.JPG
-<!-- .slide: data-transition="none" -->		 
-@title[Examine Command Line & Build Parameters]
-### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
+</pre>
+@snapend
 
 
-+++?image=/assets/images/slides3/Slide23.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Examine Command Line & Build Parameters 02]
-### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
-
-Note:
- 
-+++?image=/assets/images/slides3/Slide24.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Examine Command Line & Build Parameters 03]
-### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
-
-Note:
-+++?image=/assets/images/slides3/Slide25.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Examine Command Line & Build Parameters 04]
-### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
-
-Note:
-+++?image=/assets/images/slides3/Slide26.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Examine Command Line & Build Parameters 05]
-### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
-
-Note:
-+++?image=/assets/images/slides3/Slide27.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Examine Command Line & Build Parameters 06]
-### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
-
-Note:
-
-+++?image=/assets/images/slides3/Slide28.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Examine Command Line & Build Parameters 07]
-### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
-
-Note:
-
-+++?image=/assets/images/slides3/Slide29.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[Examine Command Line & Build Parameters 08]
-### <p align="right"><span class="gold" >Examine Build Parameters</span></p>
-
-Note:
-
----?image=/assets/images/slides3/Slide31.JPG
-@title[Build Process for Release]
-### <p align="right"><span class="gold" >Build Process for Release</span></p>
-From Terminal Prompt enter:
-```
-bash$ cd Vlv2TbltDevicePkg 
-bash$ . Build_IFWI.sh MNW2 Release
-```
 
 Note:
  Slide says it all
 
 
 ---
-@title[DEBUG & RELEASE Differences]
-### <p align="right"><span class="gold" >DEBUG & RELEASE Differences</span></p>
-@box[bg-purple text-white rounded fragment](<span style="font-size:0.95em" >Slower boot because the time it takes to display debug info </span>)
-@box[bg-green text-white rounded fragment](<span style="font-size:0.95em" >Larger image because of debug code & embedded info </span>)
-@box[bg-orange text-white rounded fragment](<span style="font-size:0.95em" >Uses the serial port for debug string output</span>)
-@box[bg-blue text-white rounded fragment](<span style="font-size:0.95em" >Contains detailed debug strings that show the boot progress and various `ASSERT` / `TRACE` errors</span>)
+@title[Examine Command Line & Build Parameters]
+<p align="right"><span class="gold" >@size[1.1em](<b>Examine Build Parameters</b>)</span></p>
+
+@snap[north-west span-100 ]
+<br>
+<br>
+@box[bg-black text-yellow rounded my-box-pad2  ](<p style="line-height:60%" align="left"><span style="font-size:0.65em; font-family:Consolas; " >&nbsp;&nbsp;build<br><br><br>&nbsp;&nbsp;</span></p>)
+@snapend
+
+
+@snap[north-east span-85  fragment]
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.60em; font-family:Consolas; " >
+<font color="#75deFF">-D SYMBOLIC_DEBUG=TRUE&nbsp;&nbsp;  -D LOGGING=TRUE<br>
+ . . . -D <i> Option &lpar;n&rpar;</i> </font>
+</span></p>
+@snapend
+
+
+@snap[north-east span-30  fragment]
+<br>
+<br>
+<p style="line-height:40%" align="left"><span style="font-size:0.8em"><br></span></p>
+@box[bg-white text-black rounded my-box-pad2  ](<p style="line-height:70%" align="left"><span style="font-size:0.8em"><font color="blue"><b>&nbsp;&nbsp;MACROS</font><br>&nbsp;&nbsp;Logging<br>&nbsp;&nbsp;Symbolic Debug<br>&nbsp;&nbsp;</b></span></p>)
+@snapend
+
+
+@snap[north-west span-100 fragment ]
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.8em"><font color="#87E2A9"><br><br><b>Properties from `Conf\Target.txt`</b></font></span></p>
+<table id="recTable">
+	<tr class="fragment">
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>TARGET</b></span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>= @color[yellow](DEBUG)</b></span></p></td>
+		<td align="left" bgcolor="#0070C0" height=".0025"><p style="line-height:010%"><span style="font-size:0.6em" ><b>Build Mode</b></span></p></td>
+	</tr>
+	<tr class="fragment">
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>TARGET_ARCH</b></span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>= @color[yellow](IA32 X64)</b></span></p></td>
+		<td align="left" bgcolor="#0070C0" height=".0025"><p style="line-height:010%"><span style="font-size:0.6em" ><b>CPU Architecture</b></span></p></td>
+	</tr>
+	<tr class="fragment">
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>TOOL_CHAIN_TAG</b></span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>= @color[yellow](VS2013x86)</b></span></p></td>
+		<td align="left" bgcolor="#0070C0" height=".0025"><p style="line-height:010%"><span style="font-size:0.6em" ><b>VS Tool Chain</b></span></p></td>
+	</tr>
+	<tr class="fragment">
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>ACTIVE_PLATFORM</b></span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:040%"><span style="font-size:0.460em; font-family:Consolas; " ><b>= @color[yellow](Vlv2TbltDevicePkg /PlatformPkgX64)</b></span></p></td>
+		<td align="left" bgcolor="#0070C0" height=".0025"><p style="line-height:010%"><span style="font-size:0.6em" ><b>Platform DSC file</b></span></p></td>
+	</tr>
+	<tr class="fragment">
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:040%"><span style="font-size:0.460em; font-family:Consolas; " ><b>MAX&lowbar;CONCURRENT&lowbar; THREAD_NUMBER</b></span></p></td>
+		<td align="left" bgcolor="#404040" height=".0025"><p style="line-height:010%"><span style="font-size:0.460em; font-family:Consolas; " ><b>= @color[yellow](1)</b></span></p></td>
+		<td align="left" bgcolor="#0070C0" height=".0025" width="35%"><p style="line-height:010%"><span style="font-size:0.6em" ><b>Thread Count</b></span></p></td>
+	</tr>
+</table>
+
+
+@snapend
+
+---
+@title[Examine Platform Parameters]
+<p align="right"><span class="gold" >@size[1.1em](<b>Platform Build and PCD Parameters</b>)</span></p>
+
+@box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" align="center"><span style="font-size:0.8em">Platform Parameters<br>&nbsp; </span></p>)
+<p style="line-height:80%"><span style="font-size:0.8em">Many Platform Parameters are defined in  a top .DSC file that controls  PCD and build switches</span></p>
+
+<p style="line-height:70%"><span style="font-size:0.7em">For MinnowBoard MAX : `PlatformPkgConfig.dsc` <br>Example:</span></p>
+
+```xml
+ #
+ # TRUE is ENABLE. FASLE is DISABLE.
+ #
+  //  . . .
+ DEFINE SECURE_BOOT_ENABLE = TRUE
+ DEFINE USER_IDENTIFICATION_ENABLE = FALSE
+ DEFINE VARIABLE_INFO_ENABLE = FALSE
+ DEFINE S3_ENABLE = TRUE
+ DEFINE CAPSULE_ENABLE = TRUE
+ DEFINE CAPSULE_RESET_ENABLE = TRUE
+  // . . .
+
+```
+
+Note:
+
+many will have "ifdef" statements in the major .dsc file in order to enable a feature or not
+
+
+---?image=/assets/images/slides3/Slide31.JPG
+@title[Build Process for Release]
+### <p align="right"><span class="gold" >Build Process for Release</span></p>
+
+
+@snap[north-west span-20  fragment]
+<br>
+@size[1.125em](<font color="yellow"> &#10104;</font>)
+@snapend
+
+@snap[north-east span-95  fragment]
+<br>
+<span style="font-size:0.9em">From Terminal Prompt enter:  &nbsp;&nbsp;</span><span style="font-size:0.6em"><font color="yellow">Note: <i> the Build will Pause</i></font></span>
+<pre>
+```
+bash$ cd Vlv2TbltDevicePkg 
+bash$ . Build_IFWI.sh MNW2 Release
+```
+</pre>
+@snapend
+
+
+@snap[north-east span-30  fragment]
+<br>
+<br>
+<p style="line-height:40%" align="left"><span style="font-size:0.8em"><br></span></p>
+@box[bg-white text-black rounded my-box-pad2  ](<p style="line-height:70%" align="left"><span style="font-size:0.8em"><font color="blue"><b>&nbsp;&nbsp;Note MACROS</font><br>&nbsp;&nbsp;Logging<br>&nbsp;&nbsp;Symbolic Debug<br>&nbsp;&nbsp;<font color="blue">Set to FALSE</font><br>&nbsp;&nbsp;</b></span></p>)
+@snapend
 
 
 Note:
+
+From Terminal Prompt enter:
+```
+bash$ cd Vlv2TbltDevicePkg 
+bash$ . Build_IFWI.sh MNW2 Release
+```
+
+     Slide says it all
+
+
+---
+@title[DEBUG & RELEASE Differences]
+### <p align="right"><span class="gold" >DEBUG & RELEASE Differences</span></p>
+
+@box[bg-purple-pp text-white rounded my-box-pad2 fragment](<p style="line-height:70%"><span style="font-size:0.9em" >Slower boot because the time it takes to display debug info <br>&nbsp; </span></p>)
+@box[bg-green-pp text-white rounded my-box-pad2 fragment](<p style="line-height:70%"><span style="font-size:0.9em" >Larger image because of debug code & embedded info<br>&nbsp;  </span></p>)
+@box[bg-gold2 text-white rounded my-box-pad2  fragment](<p style="line-height:70%"><span style="font-size:0.9em" >Uses the serial port for debug string output<br>&nbsp; </span></p>)
+@box[bg-royal text-white rounded my-box-pad2  fragment](<p style="line-height:80%"><span style="font-size:0.9em" >Contains detailed debug strings that show the<br> boot progress and various `ASSERT` / `TRACE` errors<br>&nbsp; </span></p>)
+
+ 
+Note:
+
 ### DEBUG build …
 - Contains detailed debug strings that show the boot process, along with various ASSERT/TRACE errors
 - Uses the serial port for debug string output
@@ -1026,28 +1222,37 @@ Note:
 ---?image=/assets/images/slides3/Slide39.JPG
 @title[Build Process Completed]
 ### <p align="right"><span class="gold" >Build Process Completed</span></p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<span style="font-size:0.5em">The EDK II build generates multiple firmware volumes, which are combined in the .BIN image</span>
+<span style="font-size:0.9em" >@size[1.25em](<font color="yellow"> &#10105;</font>)&nbsp;&nbsp;Locate the build .BIN image</span>
 
+@snap[south-west span-100  ]
+<p style="line-height:80%" align="left"><span style="font-size:0.9em" >
+The platform build script post build process will stitch the multiple firmware volumes generated by the EDK II build process into the final <b> .BIN</b> image.<br>
+The script displays the location of the final <b>.BIN </b> file<br><br>
+</span></p>
+@snapend
 
 Note:
-The EDK II build generates multiple firmware volumes, which are combined in the .BIN image
 
----?image=/assets/images/slides3/Slide41_1.JPG
+### Build Process Completed
+
+
+- The EDK II build generates multiple firmware volumes, which are combined in the .BIN image
+- typically the platform script will call a stitching process to combine all the images together in  post processing after the EDK II build
+
+ 
+
+ The EDK II build generates multiple firmware volumes, which are combined in the .BIN image
+
+
+---?image=/assets/images/slidesx/Slide47.JPG
 @title[Flash onto the MinnowBoard MAX]
 ### <p align="right"><span class="gold" >Flashing the New BIOS</span></p>
-
+@snap[north-west span-100  ]
+<br>
+<br>
+<span style="font-size:0.9em" >@size[1.25em](<font color="yellow"> &#10106;</font>)&nbsp;&nbsp;Flash the binary image</span>
+@snapend
+<br>
 1.  <span style="font-size:0.85em" >&nbsp;&nbsp;Access Max Binary image file from build folder</span>
   - <span style="font-size:0.75em" >`~src/Max/Vlv2TbltDevicePkg/Stitch`</span>
   - <span style="font-size:0.75em" >DEBUG 	MNW2MAX1.X64.D_0099_01_GCC.bin</span>
@@ -1067,7 +1272,7 @@ Note:
 
 
 
----?image=/assets/images/slides3/Slide43_1.JPG
+---?image=/assets/images/slidesx/Slide48.JPG
 @title[Flash onto the MinnowBoard MAX 02]
 ### <p align="right"><span class="gold" >Flashing the New BIOS</span></p>
 
@@ -1085,7 +1290,7 @@ FS0:\> MinnowBoard.MAX.FirmwareUpdateX64.efi MNW2MAX1_X64_D_0099_01_GCC.bin
 <br>
 <br>
 <br>
-<p style="line-height:70%"><span style="font-size:0.85em" >6. &nbsp;&nbsp;Reset and boot new firmware</span></p>
+<p style="line-height:70%"><span style="font-size:0.85em" >&nbsp;&nbsp;Reset and boot new firmware</span></p>
 
  
 Note:
@@ -1094,17 +1299,23 @@ Note:
 FS0:\> MinnowBoard.MAX.FirmwareUpdateX64.efi MNW2MAX1_X64_D_0099_01_GCC.bin
 ```
 
-6. Reset and boot new firmware
+Reset and boot new firmware
 
 
----?image=/assets/images/slides3/Slide45_1.JPG
+---?image=/assets/images/slidesx/Slide49.JPG
 @title[Verify after Firmware Update]
 ### <p align="right"><span class="gold" >Verify after Firmware Update</span></p>
+@snap[north-west span-100  ]
+<br>
+<br>
+<span style="font-size:0.9em" >@size[1.25em](<font color="yellow"> &#10107;</font>)&nbsp;&nbsp;Reboot and Verify</span>
+@snapend
 
+<br>
 - <span style="font-size:0.85em" >Verify that the Firmware was updated by checking the Date</span>
 - <span style="font-size:0.85em" >At the shell prompt type “exit”</span>
 - <span style="font-size:0.85em" >The EDK II front page will show the BIOS ID with Date/time stamp</span>
- 
+
  
 Note:
 
