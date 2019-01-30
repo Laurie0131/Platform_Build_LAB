@@ -585,6 +585,7 @@ Note:
 <br>
 <p style="line-height:70%" align="left"><span style="font-size:0.80em;  " >
  Terminal prompt (Cnt-Alt-T)<br>
+ Install "Screen"
  <br>
  <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp; bash$ sudo apt-get install screen &nbsp;&nbsp;<br>
@@ -611,10 +612,9 @@ Note:
 
 
 
-@snap[south-east span-45 ]
+@snap[south-east span-75 ]
 <p style="line-height:70%" align="left"><span style="font-size:0.60em;  " >
 There may be other serial terminal applications that support Ubuntu. <br>
-The application "screen" is used for the MinnowBoard MAX labs
 </span></p>
 @snapend
 
