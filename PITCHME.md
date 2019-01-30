@@ -834,7 +834,7 @@ bash$ git clone https://github.com/tianocore-training/PlatformBuildLab_FW.git
 <p style="line-height:70%"><span style="font-size:0.8em"><br>
 @color[#87E2A9](Previous Lab Setup Requirements)<br></span>
  <font face="Consolas"><span style="background-color: #000000; font-size:0.550em;"> 
-&nbsp;&nbsp; bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm  &nbsp;&nbsp;
+&nbsp; bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm  &nbsp;
 </span></font><br>
 <span style="font-size:0.8em">
 @color[#87E2A9](Additional Lab Setup -)</span><br>
@@ -849,9 +849,9 @@ bash$ git clone https://github.com/tianocore-training/PlatformBuildLab_FW.git
 <p style="line-height:40%" align="left"><span style="font-size:0.55em">
 <b>Directories:</b><br>&nbsp;&nbsp;
 &bull;Max<br>&nbsp;&nbsp;
-&bull;BuildToolsMax.tar.gz<br>&nbsp;&nbsp;
-&bull;At the Terminal prompt - install Screen utility for Serial Console to run UEFI Shell<br>&nbsp;&nbsp;
- <font face="Consolas"><span style="background-color: #000000; font-size:0.750em;"> 
+&bull;BuildToolsMax.tar.gz<br><br>&nbsp;&nbsp;
+At the Terminal prompt - install Screen utility for Serial Console to run UEFI Shell<br>&nbsp;&nbsp;
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.850em;"> 
 &nbsp;&nbsp; bash$ sudo apt-get screen &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></font>
 &nbsp;&nbsp;
@@ -863,7 +863,7 @@ bash$ git clone https://github.com/tianocore-training/PlatformBuildLab_FW.git
 <p style="line-height:40%" align="left"><span style="font-size:0.55em"><font color="yellow">
 <br>&nbsp;&nbsp;
 &hyphen;&nbsp;&nbsp;MinnowBoard Max Project source code<br>&nbsp;&nbsp;
-&hyphen;&nbsp;&nbsp;Build told for GCC compiler<br>&nbsp;&nbsp;
+&hyphen;&nbsp;&nbsp;Build told for GCC compiler<br><br>&nbsp;&nbsp;
 &nbsp;&nbsp;<br>&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;
 </font></snap></p>
@@ -895,10 +895,10 @@ bash$ sudo apt-get install screen
 Open a terminal prompt(Alt-Cnt-T)<br>
 Create a working  space source directory under the home directory<br>
 </span>
- <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.60em;"> 
 &nbsp;&nbsp; bash$ mkdir ~src &nbsp;&nbsp;&nbsp;&nbsp;
 </span></font><br>
-<span style="font-size:0.7em">
+<span style="font-size:0.65em">
 From the `FW/PlatformBuildLab` folder, copy and paste folder "`~FW/Max`" to `~src`
 </span></p>
 
@@ -1259,6 +1259,7 @@ Note:
 <br>
 <span style="font-size:0.9em" >@size[1.25em](<font color="yellow"> &#10106;</font>)&nbsp;&nbsp;Flash the binary image</span>
 @snapend
+<br>
 1.  <span style="font-size:0.85em" >&nbsp;&nbsp;Access Max Binary image file from build folder</span>
   - <span style="font-size:0.75em" >`~src/Max/Vlv2TbltDevicePkg/Stitch`</span>
   - <span style="font-size:0.75em" >DEBUG 	MNW2MAX1.X64.D_0099_01_GCC.bin</span>
@@ -1316,7 +1317,7 @@ Reset and boot new firmware
 <br>
 <span style="font-size:0.9em" >@size[1.25em](<font color="yellow"> &#10107;</font>)&nbsp;&nbsp;Reboot and Verify</span>
 @snapend
-
+<br>
 - <span style="font-size:0.8em" >Verify that the Firmware was updated by checking the Date</span>
 - <span style="font-size:0.8em" >At the shell prompt type “exit”</span>
 - <span style="font-size:0.8em" >The EDK II front page will show the BIOS ID with Date/time stamp</span>
