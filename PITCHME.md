@@ -587,11 +587,13 @@ Note:
  Terminal prompt (Cnt-Alt-T)<br>
  Install "Screen"
  <br>
+ <br>
  <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp; bash$ sudo apt-get install screen &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ cd $Home &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ gedit ~.screenrc &nbsp;&nbsp;
 </span></font>
+Inside the editor, type "`shell /bin/bash`" then save
 </span></p>
 <br>
 @snapend
@@ -612,9 +614,9 @@ Note:
 
 
 
-@snap[south-east span-75 ]
+@snap[south-east span-80 ]
 <p style="line-height:70%" align="left"><span style="font-size:0.60em;  " >
-There may be other serial terminal applications that support Ubuntu. <br>
+There may be other serial terminal applications that are supported. <br>
 </span></p>
 @snapend
 
