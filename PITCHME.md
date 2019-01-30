@@ -106,7 +106,6 @@ bash$ gedit RunQemu.sh
 ```
 <br>
 <br>
-<br>
 <span style="font-size:0.9em" >Save and Exit</span>
 
 Note:
@@ -249,7 +248,6 @@ bash$ git clone https://github.com/tianocore-training/Lab_Material_FW.git
 @snap[north-west span-100 ]
 <br>
 <br>
-<br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >1. Extract the Downloaded `Lab_Material_FW-master.zip` to `Home` &lpar; this will create a directory `FW`&rpar; </span></p>
 <br>
 @snapend
@@ -268,6 +266,7 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 @snapend
 
 @snap[north-west span-100 ]
+<br>
 <br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
 2. Open a terminal prompt (Alt-Cnt-T)<br>
@@ -300,7 +299,8 @@ bash$ mkdir ~src
 
 @snap[north-west span-100 ]
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.750em;  " >
  5. Rename or `mv` the direcotry "`~src/edk2/BaseTools`"<br><font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
 &nbsp;&nbsp;bash$ cd ~src/edk2&nbsp;&nbsp;<br>
 &nbsp;&nbsp;bash$ mv BaseTools BaseToolsX&nbsp;&nbsp;</span></font><br>
@@ -328,10 +328,11 @@ Note:
 
 @snap[north-west span-100 ]
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+<p style="line-height:60%" align="left"><span style="font-size:0.750em;  " ><br>
  7. Run Make from the Terminal prompt <br><font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
 &nbsp;&nbsp;bash$ cd ~src/edk2&nbsp;&nbsp;<br>
 &nbsp;&nbsp;bash$ make -C BaseTools&nbsp;&nbsp;</span></font><br>
+<br>
 <br>
 <br>
 <br>
@@ -373,7 +374,9 @@ bash$ . edksetup.sh
 
 @snap[north-west span-100 ]
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+<br>
+<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.80em;  " >
  @size[1.1em](What is OVMF?)<br>
    Open Virtual Machine Firmware - Build with edk2<br>
  <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
@@ -383,7 +386,10 @@ bash$ . edksetup.sh
 <br>
 <br>
 <br>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save and Exit<br>
+<br>
+<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Save and Exit<br><br>
 <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
 &nbsp;&nbsp;bash$ cd ~src/edk2 &nbsp;&nbsp;<br>
 &nbsp;&nbsp;bash$ build  &nbsp;&nbsp;&nbsp;&nbsp;</span></font>
@@ -457,7 +463,7 @@ Note:
 Note:
 - Inside Terminal
 
----?image=/assets/images/slides/Slide24.JPG
+---?image=/assets/images/slidesx/Slide18.JPG
 @title[Build Ovmf Edk2 -Verify]
 ### <p align="right"><span class="gold" >Build EDK II Ovmf</span><br></span></p>
 @snap[north-east span-50 ]
@@ -467,6 +473,8 @@ Note:
 
 
 @snap[north-west span-100 ]
+<br>
+<br>
 <br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
  OVMF.fd should be in the Build directory<br>
@@ -561,10 +569,12 @@ Note:
 
 @snap[north-west span-100 ]
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+<br>
+<br>
+<p style="line-height:70%" align="left"><span style="font-size:0.80em;  " >
  Terminal prompt (Cnt-Alt-T)<br>
  <br>
- <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp; bash$ sudo apt-get install screen &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ cd $Home &nbsp;&nbsp;<br>
 &nbsp;&nbsp; bash$ gedit ~.screenrc &nbsp;&nbsp;
@@ -575,11 +585,13 @@ Note:
 
 @snap[north-east span-45 ]
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+<br>
+<br>
+<p style="line-height:70%" align="left"><span style="font-size:0.60em;  " >
  <font color="#87E2A9"> While in screen<br><br>
  <b>Cnt-A</b> then <b>D</b> goes back to Terminal
- Terminal prompt (Cnt-Alt-T)<br></font><br>
- `bash$ screen -r` <br>
+ <br></font><br>
+ @size[.5em](`bash$ screen -r`) <br>
  (Returns to screen)
 </span></p>
  <br>
@@ -602,6 +614,8 @@ Click Save
 
 @snap[north-west span-60 ]
 <br>
+<br>
+<br>
 <p style="line-height:50%"><span style="font-size:0.7em"><b>Hardware:</b></span></p>
 <ul style="list-style-type:none; line-height:0.5;">
   <li><span style="font-size:0.5em">- System Under Test (SUT) - MinnowBoard Max/Turbot  </span>  </li>
@@ -609,7 +623,7 @@ Click Save
   <li><span style="font-size:0.5em">- 5V power supply </span>  </li>
 </ul>
 <p style="line-height:50%"><span style="font-size:0.6em">
-Connect the USB w/ 6 pin header to SUT (MAX) <br><br>
+Connect the USB w/ 6 pin header to SUT (MAX) <br>
 &nbsp;&nbsp;&nbsp;- black wire (pin 1) is closest to the SATA connector<br><br>
 Connect the USB Type A connector to Host (Laptop) <br><br>
 </span></p>
@@ -619,7 +633,6 @@ Connect the USB Type A connector to Host (Laptop) <br><br>
 @snap[south span-100 ]
 <br>
 <p style="line-height:80%" ><span style="background-color: #FFFFFF; font-size:0.560em; "> <font color="red">&nbsp;<b>**Warning</b> do not use any other power supply than 5V or the board will Fry&nbsp;&nbsp;</font></span></p>
-<br>
 @snapend
 
 Note:
@@ -637,6 +650,7 @@ Note:
 ### <p align="right"><span class="gold" >Setup MinnowBoard Max Test System</span></p>
 @snap[north-west span-100 ]
 <br>
+<br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
  Open Terminal prompt (Cnt-Alt-T)<br>
  <br>
@@ -648,9 +662,10 @@ Note:
 <br>
 @snapend
 
-@snap[north-east span-40 ]
+@snap[north-east span-60 ]
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.60em;  " >
+<br>
+<p style="line-height:80%" align="left"><span style="font-size:0.560em;  " >
  <br>
  <br>
  (to check which USB port is assigned)<br>
@@ -674,9 +689,10 @@ bash$ sudo chmod 666 /dev/ttyUSBn	#(where n is the FTDI number)
 ### <p align="right"><span class="gold" >Power on MinnowBoard MAX</span></p>
 @snap[north-west span-100 ]
 <br>
+<br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
  Connect the Power supply cable to the MinnowBoard  MAX <br>
- <font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.650em;"> 
 &nbsp;&nbsp; bash$ screen /dev/ttyUSB@color[cyan](<i>n</i>) 115200 &nbsp;&nbsp;
 </span></font><br>
 MinnowBoard MAX should boot to the UEFI Shell in the Terminal – Screen
@@ -684,19 +700,19 @@ MinnowBoard MAX should boot to the UEFI Shell in the Terminal – Screen
 <br>
 @snapend
 
-@snap[north-east span-30 ]
+@snap[north-east span-25 ]
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.60em;  " >
+<p style="line-height:80%" align="left"><span style="font-size:0.560em;  " >
  <br>
  <br>
  @color[yellow](While in Screen<br> <b>Cnt-A</b> then <b>D</b> goes back to terminal.)<br>
  <br>
- <font face="Consolas"><span style="background-color: #000000; font-size:0.450em;"> 
+ <font face="Consolas"><span style="background-color: #000000; font-size:0.90em;"> 
 &nbsp;&nbsp; bash$ screen-r &nbsp;&nbsp;
 </span></font><br> 
 (returns to Screen)
