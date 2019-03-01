@@ -68,7 +68,7 @@ Instructions from:<a href="https://github.com/tianocore/tianocore.github.io/wiki
 - Example Ubuntu 16.04<br>
 - The following need to be accessible for building Edk II Platforms, From the terminal prompt (Cnt-Alt-T) :
 ```bash
-bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm 
+bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm python3-distutils
 ```
 ```Assembly
 ; build-essential - Informational list of build-essential packages
@@ -77,6 +77,7 @@ bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm
 ; git - support for git revision control system
 ; gcc-5 - GNU C compiler (v5.4.0 as of Ubuntu 16.04 LTS)
 ; nasm - General-purpose x86 assembler 
+; python3-distutils - dist-utils module from the Python standard library
 ```
 ```bash
 bash$ sudo apt-get install qemu
@@ -1351,6 +1352,24 @@ The EDK II front page will show the BIOS ID with Date/time stamp
 @title[Questions]
 <br>
 ![Questions](/assets/images/questions.JPG =10x) 
+
+---
+@title[return to main]
+<p align="center"><span class="gold"   >@size[1.2em](<b>Return to Main Training Page</b>)</span></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="center"><span style="font-size:0.9em">Return to Training Table of contents for next presentation <a href="https://github.com/tianocore-training/Tianocore_Training_Contents/wiki#schedule--outline">link</a></span></p>
+
+@snap[north span-30 ]
+<br>
+<br>
+<br>
+<a href="https://github.com/tianocore-training/Tianocore_Training_Contents/wiki#schedule--outline">
+![trainingLogo](/assets/images/returnTrainingLogo.png)</a>
+@snapend
 
 
 ---?image=assets/images/gitpitch-audience.jpg
